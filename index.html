@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Music</title>
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+body {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.center {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <div id="close">
+        <div class="toast fade show" role="alert">
+            <div class="toast-header">
+              <svg class="bd-placeholder-img rounded me-2" width="20" height="20" ><rect width="100%" height="100%" fill="#007aff"></rect></svg>
+              <strong class="me-auto">Nguyễn Quang Hưng</strong>
+              <small>11 mins ago</small>
+              <button onclick="document.getElementById('close').style.display='none'" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Website Created By Nguyen Quang Hung
+            </div>
+        </div>
+    </div><br>
+    <!-- Kẻ Theo Đuổi Ánh Sáng -->
+    <div class="center">
+        <H1 style="color:aqua;">Kẻ Theo Đuổi Ánh Sáng</H1>
+        <button onclick="play()" class="btn btn-outline-light">Play Music</button>
+        <button onclick="pause()" class="btn btn-outline-light">Pause Music</button>
+        <audio id="audio" src="Kẻ Theo Đuổi Ánh Sáng.mp3"></audio>
+    </div><br>
+    <!-- 31072 -->
+    <div class="center">
+        <H1 style="color:aqua;">3107-2</H1>
+        <button onclick="play1()" class="btn btn-outline-light">Play Music</button>
+        <button onclick="pause1()" class="btn btn-outline-light">Pause Music</button>
+        <audio id="audio1" src="31072.mp3"></audio>
+    </div><br>
+    <!-- Forget Me Now -->
+    <div class="center">
+        <H1 style="color:aqua;">Forget Me Now</H1>
+        <button onclick="play2()" class="btn btn-outline-light">Play Music</button>
+        <button onclick="pause2()" class="btn btn-outline-light">Pause Music</button>
+        <audio id="audio2" src="Forget Me Now.mp3"></audio>
+    </div><br>
+    <!-- Chỉ Muốn Bên Em Lúc Này -->
+    <div class="center">
+        <H1 style="color:aqua;">Chỉ Muốn Bên Em Lúc Này</H1>
+        <button onclick="play3()" class="btn btn-outline-light">Play Music</button>
+        <button onclick="pause3()" class="btn btn-outline-light">Pause Music</button>
+        <audio id="audio3" src="Chỉ Muốn Bên Em Lúc Này.mp3"></audio>
+    </div><br>
+    <center><img src="https://c.tenor.com/b9r3mPu73toAAAAC/cute.gif" style="width:100px"></center>
+<script>
+    // Kẻ Theo Đuổi Ánh Sáng
+    function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+    }
+    function pause() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+    }
+    // 3107-2
+    function play1() {
+        var audio = document.getElementById("audio1");
+        audio.play();
+    }
+    function pause1() {
+        var audio = document.getElementById("audio1");
+        audio.pause();
+    }
+    // 3107-2
+    function play2() {
+        var audio = document.getElementById("audio2");
+        audio.play();
+    }
+    function pause2() {
+        var audio = document.getElementById("audio2");
+        audio.pause();
+    }
+    // Chỉ Muốn Bên Em Lúc Này
+    function play3() {
+        var audio = document.getElementById("audio3");
+        audio.play();
+    }
+    function pause3() {
+        var audio = document.getElementById("audio3");
+        audio.pause();
+    }
+    console.log('Website Created By Nguyen Quang Hung')
+    console.log('Facebook: https://www.facebook.com/QuangHungg.1410')
+</script>
+</body>
+</html>
